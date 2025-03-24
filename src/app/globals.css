@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --color-gray: #F8F9FA; 
+    --color-black: #232022;
+    --color-red: #DC3545;
+
+    --color-instagram: #D6249F;
+    --color-whatsapp: #65A30D; 
+
+    --font-sans: var(--font-barlow);
+    --font-heading: var(--font-poppins);
+}
