@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
+* {
+    min-widith: 0;
+}
+
 @theme {
     --color-gray: #F8F9FA; 
+    --color-strong: #ECEEF1;
     --color-black: #232022;
     --color-red: #DC3545;
 
