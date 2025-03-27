@@ -1,11 +1,12 @@
+import Link from 'next/link';
 import { Clock } from "lucide-react";
 
 export function Contact() {
     return (
-        <div className="w-screen text-2xl 2xl:text-4xl px-6 sm:px-12 md:px-20 lg:px-20 bg-black text-white py-12">
-            <div className="flex gap-6 lg:gap-4">
+        <div className="w-full text-xl md:text-3xl px-6 bg-black text-white py-12">
+            <div className="flex flex-col lg:flex-row gap-6">
                 {/* Coluna Esquerda - Contato */}
-                <div className="flex flex-col justify-center w-full lg:w-1/2">
+                <div className="lex flex-col justify-center w-full lg:w-1/2">
                     {/* Título */}
                     <h2 className="font-bold mb-2 text-center lg:text-left">Entre em contato!</h2>
                     <div className="w-full h-[2px] bg-gray-600 mb-6"></div>
@@ -20,10 +21,11 @@ export function Contact() {
                     </span>
 
                     {/* Contatos - Redes Sociais */}
-                    <div className="grid gap-4 sm:grid-cols-2">
+                    <div className="flex flex-col md:flex-row gap-4">
+
                         {/* WhatsApp */}
-                        <div className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-md border w-full max-w-md mx-auto">
-                            <img src="/loja-clinica.png" alt="Logo Clínica" className="w-12 h-12 sm:w-16 sm:h-16" />
+                        <div className="flex items-center gap-3 text-xl bg-white p-4 rounded-xl shadow-md border w-full max-w-md mx-auto">
+                            <img src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png" alt="Logo Clínica" className="w-12 h-12" />
                             <div className="flex flex-col flex-1">
                                 <div className="flex items-center gap-2 text-black font-semibold">
                                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
@@ -33,13 +35,13 @@ export function Contact() {
                                     <span>Whatsapp</span>
                                 </div>
                                 <span className="font-bold text-black">(81) 99627-5018</span>
+                                <button className="text-black font-bold bg-green-500 w-full h-10 rounded-lg">ENTRAR EM CONTATO</button>
                             </div>
-                            <button className="bg-green-500 w-10 h-10 rounded-lg"></button>
                         </div>
 
                         {/* Instagram */}
-                        <div className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-md border w-full max-w-md mx-auto">
-                            <img src="/loja-clinica.png" alt="Logo Clínica" className="w-12 h-12 sm:w-16 sm:h-16" />
+                        <div className="flex items-center gap-3 text-xl bg-white p-4 rounded-xl shadow-md border w-full max-w-md mx-auto">
+                            <img src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png" alt="Logo Clínica" className="w-12 h-12" />
                             <div className="flex flex-col flex-1">
                                 <div className="flex items-center gap-2 text-black font-semibold">
                                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5">
@@ -49,20 +51,32 @@ export function Contact() {
                                     <span>Instagram</span>
                                 </div>
                                 <span className=" font-bold text-black">@clinicadoautomovel</span>
+                                <a
+                                    href="https://www.instagram.com/automovelclinica/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-block w-full max-w-xs mx-auto"
+                                >
+                                    <button className="text-black font-bold bg-pink-500 w-full h-10 rounded-lg">
+                                    SEGUIR
+                                    </button>
+                                </a>
                             </div>
-                            <button className="bg-pink-500 w-10 h-10 rounded-lg"></button>
                         </div>
                     </div>
                 </div>
 
                 {/* Localização */}
-                <div className="w-full flex flex-col items-end mt-8 lg:w-1/2">
+                <div className="w-full flex flex-col items-center lg:w-1/2">
                     <h2 className="text-xl mb-4 text-center lg:text-left">Localização da Mecânica</h2>
-                    <iframe className="w-[85%] h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.515162073889!2d-34.9150242!3d-8.1507369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aae1005a017735%3A0x3ce5620924968be6!2sCl%C3%ADnica%20do%20Autom%C3%B3vel%20%7C%20Pe%C3%A7as%20e%20Servi%C3%A7os%20em%20Piedade%20Jaboat%C3%A3o%20dos%20Guararapes%20PE!5e0!3m2!1spt-BR!2sbr!4v1742833935960!5m2!1spt-BR!2sbr" 
-                    style={{ border: 0 }}  
-                    allowFullScreen  
-                    loading="lazy" >
-                    </iframe>
+                    <span className='text-lg'>R. Dona Maria de Souza, 220 - Piedade, Jaboatão dos Guararapes - PE, 54400-260</span>
+                    <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                        <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.515162073889!2d-34.9150242!3d-8.1507369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aae1005a017735%3A0x3ce5620924968be6!2sCl%C3%ADnica%20do%20Autom%C3%B3vel%20%7C%20Pe%C3%A7as%20e%20Servi%C3%A7os%20em%20Piedade%20Jaboat%C3%A3o%20dos%20Guararapes%20PE!5e0!3m2!1spt-BR!2sbr!4v1742833935960!5m2!1spt-BR!2sbr" 
+                        style={{ border: 0 }}  
+                        allowFullScreen  
+                        loading="lazy" >
+                        </iframe>
+                    </div>
                 </div>
             </div>
         </div>
