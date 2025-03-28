@@ -1,11 +1,14 @@
+"use client"
+
 import { CircleFadingPlus, House, Info, Users } from "lucide-react";
+import { Link, Element } from 'react-scroll';
 import Image from "next/image";
 
 
 export function Area() {
     return (
         <div className={`
-        flex py-5 px-[9%] items-center w-scren justify-between
+        flex py-5 px-40 items-center w-scren justify-between
         bg-black
         text-xl 2xl:text-2xl text-white
         `}>
@@ -19,15 +22,26 @@ export function Area() {
             />
                 
 
-            <div className="flex gap-4">
-                <House/>
-                <p>Página Inicial</p>
-                <Info/>
-                <p>Sobre</p>
-                <Users/>
-                <p>Clientes</p>
-                <CircleFadingPlus/>
-                <p>Contato</p>
+            <div className="flex gap-5">
+                <Link className="flex gap-2 items-center cursor-pointer" to="home" smooth={true} duration={1000}>
+                    <House/>
+                    <p>Página Inicial</p>
+                </Link>
+
+                <Link className="flex gap-2 items-center cursor-pointer" to="sobre" smooth={true} duration={1000}>
+                    <Info/>
+                    <p>Sobre</p>
+                </Link>
+
+                <Link className="flex gap-2 items-center cursor-pointer" to="clientes" smooth={true} duration={1000}>
+                    <Users/>
+                    <p>Clientes</p>
+                </Link>
+                
+                <Link className="flex gap-2 items-center cursor-pointer" to="contato" smooth={true} duration={1000}>
+                    <CircleFadingPlus/>
+                    <p>Contato</p>
+                </Link>
             </div>
         </div>
     )

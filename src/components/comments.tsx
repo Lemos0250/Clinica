@@ -13,7 +13,7 @@ export function Comments() {
     const stars = [1, 2, 3, 4, 5, 6];
 
     return (
-        <div className="flex flex-col font-heading bg-gray h-[65%] w-full py-[2.5%] justify-center items-center gap-8">
+        <div id="clientes" className="flex flex-col font-heading bg-gray h-[65%] w-full py-[2.5%] justify-center items-center gap-8">
             <div className="flex flex-col lg:w-[38%] text-center gap-4">
                 <h1 className="text-lg 2xl:text-2xl font-bold text-red">Avaliações</h1>
                 <h2 className="text-3xl 2xl:text-6xl text-gray-700">O que os clientes dizem</h2>

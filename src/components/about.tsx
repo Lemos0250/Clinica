@@ -6,14 +6,14 @@ import Image from "next/image";
 
 export function About() {
     return (
-        <div className="flex flex-col lg:flex-row h-auto lg:h-[85vh] bg-gray px-5 lg:px-20">
+        <div id="sobre" className="flex flex-col lg:flex-row h-auto lg:h-[85vh] bg-gray px-5 lg:px-20">
             {/* Imagem */}
             <motion.div 
                 initial={{ opacity: 0, x: -50 }} 
                 whileInView={{ opacity: 1, x: 0, y: 1 }} 
                 viewport={{ once: false, amount: 0.2 }} 
                 whileHover={{ scale: 1.1 }}
-                transition={{ duration: 2, ease: "easeOut" }}
+                transition={{ duration: 0.5, ease: "easeIn" }}
                 className="w-full lg:w-1/2 flex justify-center lg:justify-start items-center"
             >
                 <Image 
@@ -25,7 +25,14 @@ export function About() {
                 />
             </motion.div>
 
-            <div className="w-full lg:w-1/2 flex flex-col justify-center px-5 lg:px-10 mt-5 lg:mt-0">
+            <motion.div 
+                initial={{ opacity: 0, x: 50 }} 
+                whileInView={{ opacity: 1, x: 0, y: 1 }} 
+                viewport={{ once: false, amount: 0.2 }} 
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.5, ease: "easeIn" }}
+                className="w-full lg:w-1/2 flex flex-col justify-center px-5 lg:px-10 mt-5 lg:mt-0"
+            >
       
                 <div className="flex items-center text-xl font-semibold text-red gap-2">
                     <div className="w-8 h-[2.5px] bg-red"></div>
@@ -36,7 +43,7 @@ export function About() {
                     Serviços mecânicos de qualidade!
                 </h3>
 
-                <p className="mt-4 text-lg lg:text-xl xl:text-2xl text-gray-600">
+                <p className="mt-4 text-lg lg:text-sm 2xl:text-2xl text-gray-600">
                     A Clínica do Automóvel é sinônimo de qualidade, confiança e preço justo. 
                     Fundada em 17 de outubro de 2022, nossa empresa está localizada em Jaboatão dos Guararapes, Pernambuco, oferecendo serviços especializados em manutenção e reparação mecânica de veículos automotores. 
                     Contamos com uma equipe de mecânicos altamente capacitados, garantindo um atendimento excepcional e soluções eficientes para o seu veículo. 
@@ -58,7 +65,7 @@ export function About() {
                         text="Revisão para viagem, Manutenção e reparo de motor."
                     />
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }

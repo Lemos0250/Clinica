@@ -3,10 +3,10 @@ import { Clock } from "lucide-react";
 
 export function Contact() {
     return (
-        <div className="w-full text-xl md:text-3xl px-6 bg-black text-white py-12">
+        <div id="contato" className="w-full text-xl md:text-2xl 2xl:text-3xl px-6 pb-7 bg-black text-white">
             <div className="flex flex-col lg:flex-row gap-6">
                 {/* Coluna Esquerda - Contato */}
-                <div className="lex flex-col justify-center w-full lg:w-1/2">
+                <div className="flex flex-col gap-7 justify-center w-full lg:w-1/2">
                     {/* Título */}
                     <h2 className="font-bold mb-2 text-center lg:text-left">Entre em contato!</h2>
                     <div className="w-full h-[2px] bg-gray-600 mb-6"></div>
@@ -34,13 +34,13 @@ export function Contact() {
                                     </svg>
                                     <span>Whatsapp</span>
                                 </div>
-                                <span className="font-bold text-black">(81) 99627-5018</span>
+                                <span className="text-2xl font-bold text-black">(81) 99627-5018</span>
                                 <button className="text-black font-bold bg-green-500 w-full h-10 rounded-lg">ENTRAR EM CONTATO</button>
                             </div>
                         </div>
 
                         {/* Instagram */}
-                        <div className="flex items-center gap-3 text-xl bg-white p-4 rounded-xl shadow-md border w-full max-w-md mx-auto">
+                        <div className="flex items-center gap-3 text-xl bg-white p-4 rounded-xl shadow-md border w-full min-h-[150px] mx-auto">
                             <img src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png" alt="Logo Clínica" className="w-12 h-12" />
                             <div className="flex flex-col flex-1">
                                 <div className="flex items-center gap-2 text-black font-semibold">
@@ -50,7 +50,7 @@ export function Contact() {
                                     </svg>
                                     <span>Instagram</span>
                                 </div>
-                                <span className=" font-bold text-black">@clinicadoautomovel</span>
+                                <span className="text-2xl font-bold text-black">@clinicadoautomovel</span>
                                 <a
                                     href="https://www.instagram.com/automovelclinica/"
                                     target="_blank"
@@ -67,17 +67,18 @@ export function Contact() {
                 </div>
 
                 {/* Localização */}
-                <div className="w-full flex flex-col items-center lg:w-1/2">
-                    <h2 className="text-xl mb-4 text-center lg:text-left">Localização da Mecânica</h2>
-                    <span className='text-lg'>R. Dona Maria de Souza, 220 - Piedade, Jaboatão dos Guararapes - PE, 54400-260</span>
-                    <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
-                        <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.515162073889!2d-34.9150242!3d-8.1507369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aae1005a017735%3A0x3ce5620924968be6!2sCl%C3%ADnica%20do%20Autom%C3%B3vel%20%7C%20Pe%C3%A7as%20e%20Servi%C3%A7os%20em%20Piedade%20Jaboat%C3%A3o%20dos%20Guararapes%20PE!5e0!3m2!1spt-BR!2sbr!4v1742833935960!5m2!1spt-BR!2sbr" 
-                        style={{ border: 0 }}  
-                        allowFullScreen  
-                        loading="lazy" >
-                        </iframe>
-                    </div>
+                <div className="w-full flex flex-col items-center mt-[2.5%] lg:w-1/2">
+                <h2 className="text-xl mb-4 text-center lg:text-center">Localização da Mecânica</h2>
+                <span className="text-lg w-full text-center lg:text-start">R. Dona Maria de Souza, 220 - Piedade, Jaboatão dos Guararapes - PE, 54400-260</span>
+                <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                    <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.515162073889!2d-34.9150242!3d-8.1507369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aae1005a017735%3A0x3ce5620924968be6!2sCl%C3%ADnica%20do%20Autom%C3%B3vel%20%7C%20Pe%C3%A7as%20e%20Servi%C3%A7os%20em%20Piedade%20Jaboat%C3%A3o%20dos%20Guararapes%20PE!5e0!3m2!1spt-BR!2sbr!4v1742833935960!5m2!1spt-BR!2sbr" 
+                    style={{ border: 0 }}  
+                    allowFullScreen 
+                    loading="lazy">
+                    </iframe>
                 </div>
+            </div>
+
             </div>
         </div>
     );
