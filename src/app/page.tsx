@@ -8,7 +8,7 @@ import { HomePage } from "@/components/home";
 
 export default function Home() {
   return (
-    <main>
+    <main className="gap-">
       <Header/>
       <Area/>
       <HomePage/>

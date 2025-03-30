@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function HomePage() {
     return (
-        <div className="relative flex flex-col lg:flex-row h-auto lg:h-[85vh] px-5 lg:px-20">
+        <div className="relative flex flex-col lg:flex-row h-auto lg:h-[85vh] pt-10 md:pt-0 px-5 lg:px-20">
             
             <div 
                 className="absolute inset-0 bg-[url('/Fundo.png')] bg-cover bg-center 
@@ -36,15 +36,22 @@ export function HomePage() {
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                 </p>
 
-                <button className="flex items-center py-3 px-6 bg-red text-white text-sm md:text-base 2xl:text-xl font-medium rounded-xl gap-2">
-                    <MapIcon />
-                    Entre em contato
-                </button>
+                <a
+                    href="https://www.google.com/search?q=Cl%C3%ADnica+do+Autom%C3%B3vel+%7C+Pe%C3%A7as+e+Servi%C3%A7os+em+Piedade+Jaboat%C3%A3o+dos+Guararapes+PE&oq=Cl%C3%ADnica+do+Autom%C3%B3vel+%7C+Pe%C3%A7as+e+Servi%C3%A7os+em+Piedade+Jaboat%C3%A3o+dos+Guararapes+PE&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQRRg80gEHNjA3ajBqOagCALACAQ&sourceid=chrome&ie=UTF-8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-[70%] md:w-[50%] 2xl:w-[33%]"
+                    >
+                    <button className="flex justify-center items-center py-3 px-6 bg-red text-white text-sm md:text-base 2xl:text-xl font-medium w-full rounded-xl gap-2">
+                        <MapIcon />
+                        Entre em contato
+                    </button>
+                </a>
 
                 <span className="text-sm md:text-base">Preencha seu e-mail e faça parte da família</span>
             </motion.div>
 
-            {/* Imagem ao lado */}
+            
             <motion.div 
             initial={{ opacity: 0, x: 50 }} 
             whileInView={{ opacity: 1, x: 0, y: 1 }} 
