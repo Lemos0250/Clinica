@@ -13,7 +13,13 @@ export function HomePage() {
                 grayscale filter blur-[2.5px] opacity-50 z-0">
             </div>
 
-            <div className="relative flex flex-col justify-center w-full lg:w-1/2 gap-4 font-heading px-5 lg:px-14">
+            <motion.div 
+            initial={{ opacity: 0, x: -50 }} 
+            whileInView={{ opacity: 1, x: 0, y: 1 }} 
+            viewport={{ once: false, amount: 0.2 }} 
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="relative flex flex-col justify-center w-full lg:w-1/2 gap-4 font-heading px-5 lg:px-14">
                 <Image 
                     className="w-[15%] h-[12%] object-fill rounded-xl"
                     src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png"
@@ -36,11 +42,16 @@ export function HomePage() {
                 </button>
 
                 <span className="text-sm md:text-base">Preencha seu e-mail e faça parte da família</span>
-            </div>
+            </motion.div>
 
             {/* Imagem ao lado */}
-            <div className="relative flex justify-center items-end w-full lg:w-1/2 mt-10 lg:mt-0">
-                <div className="relative w-full h-[500px] lg:h-[800px] 2xl:h-[950px]">
+            <motion.div 
+            initial={{ opacity: 0, x: 50 }} 
+            whileInView={{ opacity: 1, x: 0, y: 1 }} 
+            viewport={{ once: false, amount: 0.2 }} 
+            transition={{ duration: 0.5, ease: "easeIn" }}
+            className="relative flex justify-center items-end w-full lg:w-1/2 mt-10 lg:mt-0">
+                <div className="relative w-full h-[500px] lg:h-full ">
                     <Image
                     className="scale-x-[-1] object-cover object-top rounded-4xl"
                     src="/MulherMech.png"
@@ -48,7 +59,7 @@ export function HomePage() {
                     layout="fill"
                     />
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }
