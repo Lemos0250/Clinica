@@ -26,9 +26,9 @@ export function Header() {
                         <Phone className="w-5 h-5" />
                         <p>(81) 99627-5018</p>
                     </button>
-                    <button onClick={() => copyToClipboard('demo@example.com')} className="cursor-pointer flex items-center gap-2">
+                    <button onClick={() => copyToClipboard('Arquimedesfranca213@gmail.com')} className="cursor-pointer flex items-center gap-2">
                         <Mail className="w-5 h-5" />
-                        <p>demo@example.com</p>
+                        <p>Arquimedesfranca213@gmail.com</p>
                     </button>
                 </div>
 

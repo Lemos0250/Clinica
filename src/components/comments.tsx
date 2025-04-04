@@ -36,7 +36,14 @@ export function Comments() {
                             ))}
                         </div>
                         <blockquote className="mb-2">"Bons mecânicos, atendimento maravilhoso e o melhor de tudo preço justo. Pode ir de olhos fechados"</blockquote>
-                        <span className="block">Carlos Henrique</span>
+                        <Image 
+                            className="w-[7%] h-[12%] object-fill rounded-xl"
+                            src="/User.png"
+                            width={600}
+                            height={500}
+                            alt="Clínica do Automóvel"
+                        />
+                        <span className="block">Ana Clara</span>
                         <span className="font-bold block">Cliente desde 2002</span>
                     </div>
                 </SwiperSlide>
@@ -49,7 +56,14 @@ export function Comments() {
                             ))}
                         </div>
                         <blockquote className="mb-2">"Um ótimo lugar e de confiança"</blockquote>
-                        <span className="block">Carlos Henrique</span>
+                        <Image 
+                            className="w-[7%] h-[12%] object-fill rounded-xl"
+                            src="/User.png"
+                            width={600}
+                            height={500}
+                            alt="Clínica do Automóvel"
+                        />
+                        <span className="block">Marcos Braga</span>
                         <span className="font-bold block">Cliente desde 2002</span>
                     </div>
                 </SwiperSlide>
@@ -62,6 +76,13 @@ export function Comments() {
                             ))}
                         </div>
                         <blockquote className="mb-2">"Serviço de mecânica excepcional, com profissionais qualificados e atendimento de primeira. Trabalham com diversos tipos de carros, sempre garantindo qualidade e eficiência. Recomendo!"</blockquote>
+                        <Image 
+                            className="w-[7%] h-[12%] object-fill rounded-xl"
+                            src="/User.png"
+                            width={600}
+                            height={500}
+                            alt="Clínica do Automóvel"
+                        />
                         <span className="block">Carlos Henrique</span>
                         <span className="font-bold block">Cliente desde 2002</span>
                     </div>
