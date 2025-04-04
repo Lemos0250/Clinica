@@ -30,7 +30,7 @@ export function Contact() {
 
                         {/* WhatsApp */}
                         <div className="flex items-center gap-3 text-xl bg-white p-4 rounded-xl shadow-md border w-full max-w-md mx-auto">
-                            <img src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png" alt="Logo Clínica" className="w-12 h-12" />
+                            <img src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png" alt="Logo Clínica" className="w-20 2xl:w-25 h-20" />
                             <div className="flex flex-col flex-1">
                                 <div className="flex items-center gap-2 text-black font-semibold">
                                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-green-500">
@@ -46,7 +46,7 @@ export function Contact() {
                                     rel="noopener noreferrer"
                                     className="inline-block w-full max-w-xs mx-auto"
                                 >
-                                    <button className="font-heading text-lg bg-green-500 w-full h-10 rounded-lg">
+                                    <button className="font-heading text-lg bg-green-500 w-full 2xl:w-3/4 h-10 rounded-lg">
                                         ENTRAR EM CONTATO
                                     </button>
                                 </a>
@@ -55,7 +55,7 @@ export function Contact() {
                                     
                         {/* Instagram */}
                         <div className="flex items-center gap-3 text-xl bg-white p-4 rounded-xl shadow-md border w-full min-h-[150px] mx-auto">
-                            <img src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png" alt="Logo Clínica" className="w-12 h-12" />
+                            <img src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png" alt="Logo Clínica" className="w-20 2xl:w-25 h-20" />
                             <div className="flex flex-col flex-1">
                                 <div className="flex items-center gap-2 text-black font-semibold">
                                     <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-purple-500">
@@ -71,7 +71,7 @@ export function Contact() {
                                     rel="noopener noreferrer"
                                     className="inline-block w-full max-w-xs mx-auto"
                                 >
-                                    <button className="font-heading text-lg bg-pink-500 w-full h-10 rounded-lg">
+                                    <button className="font-heading text-lg bg-pink-500 w-full 2xl:w-3/4 h-10 rounded-lg">
                                         SEGUIR
                                     </button>
                                 </a>
@@ -93,8 +93,9 @@ export function Contact() {
                     </iframe>
                 </div>
             </div>
-
             </div>
+
+            <div className="w-full mt-10 h-[2px] bg-gray-600 mb-6"></div>
         </div>
     );
 }

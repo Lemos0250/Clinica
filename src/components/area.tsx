@@ -9,16 +9,16 @@ export function Area() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <div className="bg-black text-white">
-      <div className="flex items-center justify-between py-5 px-6 lg:px-40">
+    <div className="bg-black text-white position">
+      <div className="flex items-center justify-between py-2 px-6 lg:px-40">
         {/* Logo */}
         <Image
-          className="w-24 h-auto object-fill rounded-xl"
-          src="/LogoTotal.png"
-          width={1000}
-          height={500}
-          alt="Clínica do Automóvel"
-        />
+        className="w-32 sm:w-40 h-auto object-contain rounded-xl"
+        src="/LogoTotal.png"
+        width={1000}
+        height={500}
+        alt="Clínica do Automóvel"
+      />
 
         {/* Botão Hambúrguer para Mobile */}
         <div className="lg:hidden relative">

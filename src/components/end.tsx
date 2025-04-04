@@ -8,7 +8,7 @@ import { toast, ToastContainer } from 'react-toastify';
 export function End() {  
 
     return (  
-        <div className="flex flex-col md:flex-row w-full h-auto px-10 py-5 gap-[2.5%] bg-black text-white text-sm md:text-lg font-heading">  
+        <div className="flex flex-col md:flex-row w-full h-auto px-10 gap-[2.5%] bg-black text-white text-sm md:text-md 2xl:text-lg font-heading">  
 
             {/* Seção com a logo e descrição */}  
             <div className="flex flex-col mt-[5%] items-start min-w-1/2 md:w-1/3">  

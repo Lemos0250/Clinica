@@ -6,6 +6,7 @@ import { Contact } from "@/components/contacts";
 import { End } from "@/components/end";
 import { Header } from "@/components/header";
 import { HomePage } from "@/components/home";
+import { Services } from "@/components/services";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Area/>
       <HomePage/>
       <About/>
+      <Services/>
       <Brands/>
       <Comments/>
       <Contact/>
