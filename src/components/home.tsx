@@ -21,7 +21,7 @@ export function HomePage() {
             transition={{ duration: 0.5, ease: "easeIn" }}
             className="relative flex flex-col justify-center w-full lg:w-1/2 gap-4 font-heading px-5 lg:px-14">
                 <Image 
-                    className="w-[15%] h-[12%] object-fill rounded-xl"
+                    className="w-[20%] 2xl:w-[15%] h-[12%] object-fill rounded-xl"
                     src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png"
                     width={600}
                     height={500}

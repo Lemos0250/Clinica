@@ -3,7 +3,7 @@ import { Clock, Watch } from "lucide-react";
 
 export function Contact() {
     return (
-        <div id="contato" className="w-full text-xl md:text-2xl 2xl:text-3xl px-6 pb-7 bg-black text-white">
+        <div id="contato" className="text-xl md:text-2xl 2xl:text-3xl px-6 pb-7 bg-black text-white">
             <div className="flex flex-col lg:flex-row gap-6">
                 {/* Coluna Esquerda - Contato */}
                 <div className="flex flex-col gap-2 justify-center w-full lg:w-1/2">

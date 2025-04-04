@@ -3,6 +3,7 @@ import { Area } from "@/components/area";
 import { Brands } from "@/components/brands";
 import { Comments } from "@/components/comments";
 import { Contact } from "@/components/contacts";
+import { End } from "@/components/end";
 import { Header } from "@/components/header";
 import { HomePage } from "@/components/home";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Brands/>
       <Comments/>
       <Contact/>
+      <End/>
     </main>
   );
 }
