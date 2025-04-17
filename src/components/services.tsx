@@ -3,13 +3,13 @@
 import { motion } from "framer-motion";
 import Image from 'next/image';
 
-import bico from '../../public/ServicesImg/Bicos Ejetores.jpg';
+import bico from '../../public/ServicesImg/Bicos Ejetores.jpg.png';
 import motor from '../../public/ServicesImg/Motor.jpg';
 import oleo from '../../public/ServicesImg/Troca de Óleo.jpg';
 import eletronica from '../../public/ServicesImg/InjeçãoEletronica.jpg';
-import embreeagem from '../../public/ServicesImg/Embreeagem.jpg';
+import embreeagem from '../../public/ServicesImg/Embreeagem.jpg.png';
 import diagnostico from '../../public/ServicesImg/Diagnostico.jpg';
-import correia from '../../public/ServicesImg/Correia Dentada.jpg';
+import correia from '../../public/ServicesImg/Correia Dentada.jpg.png';
 import cabecote from '../../public/ServicesImg/Cabeçote.jpg';
 
 const services = [
@@ -44,7 +44,7 @@ export function Services() {
         initial={{ scale: 0.5, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="text-4xl font-sans font-bold text-black p-4 rounded-full"
+        className="flex text-center text-4xl font-sans font-bold text-black p-4 rounded-full"
       >
         Serviços mais populares
       </motion.h2>
@@ -68,12 +68,19 @@ export function Services() {
             }}
             className="flex flex-col items-center justify-center text-center"
           >
+            <div className="w-[200px] h-[150px] sm:w-[180px] sm:h-[180px] md:w-[230px] md:h-[160px] relative">
             <Image
               src={service.image}
               alt={service.name}
-              className="rounded-lg object-cover shadow-md hover:scale-105 transition-transform w-full"
+              fill
+              className="rounded-lg object-cover shadow-md hover:scale-105 transition-transform"
             />
-            <p className="mt-2 font-heading text-gray-600 font-medium text-2xl">{service.name}</p>
+          </div>
+
+          <p className="mt-2 font-heading text-gray-600 font-medium text-center text-xl">
+            {service.name}
+          </p>
+
           </motion.div>
         ))}
       </motion.div>

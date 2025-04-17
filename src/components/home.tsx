@@ -37,12 +37,12 @@ export function HomePage() {
                 </p>
 
                 <a
-                    href="https://www.google.com/search?q=Cl%C3%ADnica+do+Autom%C3%B3vel+%7C+Pe%C3%A7as+e+Servi%C3%A7os+em+Piedade+Jaboat%C3%A3o+dos+Guararapes+PE&oq=Cl%C3%ADnica+do+Autom%C3%B3vel+%7C+Pe%C3%A7as+e+Servi%C3%A7os+em+Piedade+Jaboat%C3%A3o+dos+Guararapes+PE&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQRRg80gEHNjA3ajBqOagCALACAQ&sourceid=chrome&ie=UTF-8"
+                    href="https://wa.me/+558196275018"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-[70%] md:w-[50%] 2xl:w-[33%]"
                     >
-                    <button className="flex justify-center items-center py-3 px-6 bg-red text-white text-sm md:text-base 2xl:text-xl font-medium w-full rounded-xl gap-2">
+                    <button className="cursor-pointer flex justify-center items-center py-3 px-6 bg-red text-white text-sm md:text-base 2xl:text-xl font-medium w-full rounded-xl gap-2">
                         <MapIcon />
                         Entre em contato
                     </button>

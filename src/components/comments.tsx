@@ -44,7 +44,7 @@ export function Comments() {
                             alt="Clínica do Automóvel"
                         />
                         <span className="block">Ana Clara</span>
-                        <span className="font-bold block">Cliente desde 2002</span>
+                        <span className="font-bold block">Cliente desde 2020</span>
                     </div>
                 </SwiperSlide>
 
@@ -64,7 +64,7 @@ export function Comments() {
                             alt="Clínica do Automóvel"
                         />
                         <span className="block">Marcos Braga</span>
-                        <span className="font-bold block">Cliente desde 2002</span>
+                        <span className="font-bold block">Cliente desde 2020</span>
                     </div>
                 </SwiperSlide>
 
@@ -84,7 +84,7 @@ export function Comments() {
                             alt="Clínica do Automóvel"
                         />
                         <span className="block">Carlos Henrique</span>
-                        <span className="font-bold block">Cliente desde 2002</span>
+                        <span className="font-bold block">Cliente desde 2020</span>
                     </div>
                 </SwiperSlide>
             </Swiper>

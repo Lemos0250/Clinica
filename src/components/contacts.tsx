@@ -46,7 +46,7 @@ export function Contact() {
                                     rel="noopener noreferrer"
                                     className="inline-block w-full max-w-xs mx-auto"
                                 >
-                                    <button className="font-heading text-lg bg-green-500 w-full 2xl:w-3/4 h-10 rounded-lg">
+                                    <button className="cursor-pointer font-heading text-lg bg-green-500 w-full 2xl:w-3/4 h-10 rounded-lg">
                                         ENTRAR EM CONTATO
                                     </button>
                                 </a>
@@ -71,7 +71,7 @@ export function Contact() {
                                     rel="noopener noreferrer"
                                     className="inline-block w-full max-w-xs mx-auto"
                                 >
-                                    <button className="font-heading text-lg bg-pink-500 w-full 2xl:w-3/4 h-10 rounded-lg">
+                                    <button className="cursor-pointer font-heading text-lg bg-pink-500 w-full 2xl:w-3/4 h-10 rounded-lg">
                                         SEGUIR
                                     </button>
                                 </a>
