@@ -50,7 +50,7 @@ export function Services() {
       </motion.h2>
 
       <motion.div
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-20"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2.5 sm:gap-20"
         variants={containerVariants}
       >
         {services.map((service, index) => (
@@ -68,7 +68,7 @@ export function Services() {
             }}
             className="flex flex-col items-center justify-center text-center"
           >
-            <div className="w-[200px] h-[150px] sm:w-[180px] sm:h-[180px] md:w-[230px] md:h-[160px] relative">
+            <div className="w-[150px] h-[115px] sm:w-[180px] sm:h-[180px] md:w-[230px] md:h-[160px] relative">
             <Image
               src={service.image}
               alt={service.name}

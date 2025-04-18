@@ -11,7 +11,7 @@ export function Area() {
   return (
     <div className="bg-black text-white position">
       <div className="flex items-center justify-between py-2 px-6 lg:px-40">
-        {/* Logo */}
+        
         <Image
         className="w-32 sm:w-40 h-auto object-contain rounded-xl"
         src="/LogoTotal.png"
@@ -20,7 +20,6 @@ export function Area() {
         alt="Clínica do Automóvel"
       />
 
-        {/* Botão Hambúrguer para Mobile */}
         <div className="lg:hidden relative">
           <button
             onClick={() => setIsDropdownOpen(!isDropdownOpen)}
@@ -30,7 +29,6 @@ export function Area() {
             <Menu size={32} />
           </button>
 
-          {/* Menu Dropdown */}
           {isDropdownOpen && (
             <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg z-50">
               <Link
@@ -77,10 +75,9 @@ export function Area() {
           )}
         </div>
 
-        {/* Links de Navegação para Desktop */}
         <div className="hidden lg:flex gap-5">
           <Link
-            className="flex gap-2 items-center cursor-pointer"
+            className="flex gap-2 items-center cursor-pointer hover:text-gray-200 hover:scale-110"
             to="home"
             smooth={true}
             duration={1000}
@@ -89,7 +86,7 @@ export function Area() {
             <p>Página Inicial</p>
           </Link>
           <Link
-            className="flex gap-2 items-center cursor-pointer"
+            className="flex gap-2 items-center cursor-pointer hover:text-gray-200 hover:scale-110"
             to="sobre"
             smooth={true}
             duration={1000}
@@ -98,7 +95,7 @@ export function Area() {
             <p>Sobre</p>
           </Link>
           <Link
-            className="flex gap-2 items-center cursor-pointer"
+            className="flex gap-2 items-center cursor-pointer hover:text-gray-200 hover:scale-110"
             to="clientes"
             smooth={true}
             duration={1000}
@@ -107,7 +104,7 @@ export function Area() {
             <p>Clientes</p>
           </Link>
           <Link
-            className="flex gap-2 items-center cursor-pointer"
+            className="flex gap-2 items-center cursor-pointer hover:text-gray-200 hover:scale-110"
             to="contato"
             smooth={true}
             duration={1000}

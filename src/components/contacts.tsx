@@ -6,7 +6,7 @@ export function Contact() {
         <div id="contato" className="text-xl md:text-2xl 2xl:text-3xl px-6 pb-7 bg-black text-white">
             <div className="flex flex-col lg:flex-row gap-6">
                 {/* Coluna Esquerda - Contato */}
-                <div className="flex flex-col gap-2 justify-center w-full lg:w-1/2">
+                <div className="flex flex-col gap-2 justify-center w-full py-5 sm:py-0 lg:w-1/2">
                     {/* Título */}
                     <h2 className="font-bold mb-2 text-center lg:text-left">Entre em contato!</h2>
                     <div className="w-full h-[2px] bg-gray-600 mb-6"></div>
@@ -46,7 +46,7 @@ export function Contact() {
                                     rel="noopener noreferrer"
                                     className="inline-block w-full max-w-xs mx-auto"
                                 >
-                                    <button className="cursor-pointer font-heading text-lg bg-green-500 w-full 2xl:w-3/4 h-10 rounded-lg">
+                                    <button className="cursor-pointer font-heading 2xl:text-lg bg-green-500 text-sm w-full 2xl:w-3/4 h-10 rounded-lg hover:opacity-90">
                                         ENTRAR EM CONTATO
                                     </button>
                                 </a>
@@ -58,10 +58,9 @@ export function Contact() {
                             <img src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png" alt="Logo Clínica" className="w-20 2xl:w-25 h-20" />
                             <div className="flex flex-col flex-1">
                                 <div className="flex items-center gap-2 text-black font-semibold">
-                                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 fill-purple-500">
-                                        <title>Instagram</title>
-                                        <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814"/>
-                                    </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="w-5 h-5 fill-pink-500">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
                                     <span>Instagram</span>
                                 </div>
                                 <span className="text-lg font-bold text-black">@clinicadoautomovel</span>
@@ -71,7 +70,7 @@ export function Contact() {
                                     rel="noopener noreferrer"
                                     className="inline-block w-full max-w-xs mx-auto"
                                 >
-                                    <button className="cursor-pointer font-heading text-lg bg-pink-500 w-full 2xl:w-3/4 h-10 rounded-lg">
+                                    <button className="cursor-pointer font-heading text-lg bg-pink-500 w-full 2xl:w-3/4 h-10 rounded-lg hover:opacity-90">
                                         SEGUIR
                                     </button>
                                 </a>

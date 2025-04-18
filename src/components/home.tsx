@@ -19,7 +19,7 @@ export function HomePage() {
             viewport={{ once: false, amount: 0.2 }} 
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, ease: "easeIn" }}
-            className="relative flex flex-col justify-center w-full lg:w-1/2 gap-4 font-heading px-5 lg:px-14">
+            className="relative flex flex-col justify-center w-full lg:w-1/2 gap-3 font-heading px-5 lg:px-14">
                 <Image 
                     className="w-[20%] 2xl:w-[15%] h-[12%] object-fill rounded-xl"
                     src="/Carro_de_Kiko_LE_upscale_digital_art_x4-removebg-preview.png"
@@ -31,9 +31,9 @@ export function HomePage() {
                     Seja bem-vindo(a) ao site da <span className="text-red font-bold">Clínica do Automóvel</span>
                 </h1>
                 <p className="text-base md:text-lg 2xl:text-2xl font-light">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Aqui, seu carro é tratado com o cuidado e a atenção que ele merece. Nossa missão é garantir que você e seu veículo estejam 
+                    sempre seguros e prontos pra rodar, com serviços especializados, diagnóstico preciso e uma equipe apaixonada por mecânica. 
+                    Da revisão à manutenção completa.
                 </p>
 
                 <a
@@ -42,7 +42,7 @@ export function HomePage() {
                     rel="noopener noreferrer"
                     className="w-[70%] md:w-[50%] 2xl:w-[33%]"
                     >
-                    <button className="cursor-pointer flex justify-center items-center py-3 px-6 bg-red text-white text-sm md:text-base 2xl:text-xl font-medium w-full rounded-xl gap-2">
+                    <button className="cursor-pointer flex justify-center items-center py-3 px-6 bg-red hover:bg-[#c82333] text-white text-sm md:text-base 2xl:text-xl font-medium w-full rounded-xl gap-2">
                         <MapIcon />
                         Entre em contato
                     </button>
