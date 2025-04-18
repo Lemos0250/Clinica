@@ -31,9 +31,9 @@ export function HomePage() {
                     Seja bem-vindo(a) ao site da <span className="text-red font-bold">Clínica do Automóvel</span>
                 </h1>
                 <p className="text-base md:text-lg 2xl:text-2xl font-light">
-                    Aqui, seu carro é tratado com o cuidado e a atenção que ele merece. Nossa missão é garantir que você e seu veículo estejam 
-                    sempre seguros e prontos pra rodar, com serviços especializados, diagnóstico preciso e uma equipe apaixonada por mecânica. 
-                    Da revisão à manutenção completa.
+                Aqui, seu carro é tratado com o cuidado e a atenção que ele merece. Nossa missão é garantir que você e seu veículo estejam sempre seguros e prontos pra rodar,
+                com serviços especializados, diagnóstico preciso e uma equipe apaixonada por mecânica. Mais do que consertar, nós cuidamos. Da revisão à manutenção completa, 
+                estamos prontos pra oferecer um atendimento honesto, eficiente e de confiança.
                 </p>
 
                 <a
@@ -48,7 +48,6 @@ export function HomePage() {
                     </button>
                 </a>
 
-                <span className="text-sm md:text-base">Preencha seu e-mail e faça parte da família</span>
             </motion.div>
 
             
